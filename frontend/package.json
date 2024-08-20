@@ -1,0 +1,9 @@
+{
+    "name": "shadowknight-frontend",
+    "version": "1.0.0",
+    "main": "public/index.html",
+    "scripts": {
+      "start": "live-server public"
+    },
+    "dependencies": {}
+  }

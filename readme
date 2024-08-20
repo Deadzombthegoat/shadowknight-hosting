@@ -1,0 +1,127 @@
+
+# ShadowKnight Hosting
+
+**ShadowKnight Hosting** is a powerful and customizable platform for hosting Minecraft and Eaglercraft servers. This platform is designed to provide all the features of Pterodactyl, with a focus on flexibility and ease of use, without actually relying on Pterodactyl. ShadowKnight Hosting includes a user-friendly interface, admin tools, and a robust backend to manage all aspects of server hosting.
+
+## Features
+
+- **Comprehensive Server Hosting**: Supports all Minecraft server versions and JAR files, including modded servers and Eaglercraft.
+- **User Authentication**: Secure signup and login system, with the ability to log in using either a username or email.
+- **Admin Panel**: Includes an admin account with extensive controls to manage the platform, including the ability to set up domains, customize the design, and manage server prices.
+- **Customizable Design**: Easily modify the design of every page on the platform through the admin panel.
+- **Automated Updates**: Built-in update system that checks for new code from a designated folder and replaces the old code with the new one.
+- **Billing System**: Integrated billing system with flexible payment options and easy management of financial aspects.
+- **Chat System**: Allows users to communicate and ask for help, fostering a community around the hosting service.
+- **Self-Hosting**: Can host itself on any domain, with a default deployment on a VPS or any other server environment.
+
+## Installation
+
+### 1. Clone the Repository
+
+Start by cloning the repository to your local machine:
+
+```bash
+git clone https://github.com/yourusername/shadowknight-hosting.git
+```
+
+### 2. Install Backend Dependencies
+
+Navigate to the backend directory and install the necessary dependencies:
+
+```bash
+cd backend
+npm install
+```
+
+### 3. Install Frontend Dependencies
+
+Move to the frontend directory and install its dependencies:
+
+```bash
+cd ../frontend
+npm install
+```
+
+### 4. Start the Server
+
+Finally, start the backend server:
+
+```bash
+cd ../backend
+npm start
+```
+
+## Project Structure
+
+The project is structured as follows:
+
+- **backend/**: Contains all server-side code, including the Express.js server and MongoDB models.
+- **frontend/**: Contains the client-side code, including HTML, CSS, and JavaScript.
+- **scripts/**: Contains bash scripts for starting, stopping, deploying, and updating the platform.
+- **public/**: Static assets and stylesheets.
+
+## Usage
+
+### Starting the Server
+
+To start the server, use the provided `start.sh` script:
+
+```bash
+./start.sh
+```
+
+### Stopping the Server
+
+To stop the server, use the `stop.sh` script:
+
+```bash
+./stop.sh
+```
+
+### Deploying on a Domain
+
+To deploy the platform on your domain, use the `deploy.sh` script:
+
+```bash
+./deploy.sh
+```
+
+### Updating the Codebase
+
+To update the platform with new code, use the `update.sh` script:
+
+```bash
+./update.sh
+```
+
+## Admin Panel
+
+The admin panel is accessible through the `/admin` route. By default, the admin account has the username `admin` and the password `1234`. Through the admin panel, you can:
+
+- Set or update the domain.
+- Change the design and appearance of the platform.
+- Manage server prices and options.
+- Create new servers without payment for admin accounts.
+- Update user roles and permissions.
+- Access all features and functionalities similar to Pterodactyl.
+
+## Domain Setup
+
+To deploy the platform on a specific domain, ensure that the domain is correctly pointed to your VPS or server's IP address. You can then configure the platform to use this domain through the admin panel.
+
+## Security
+
+- **Sensitive Information**: Replace default credentials and secrets (like the `jwtSecret`) with strong, secure values before deploying the platform.
+- **HTTPS**: Consider setting up SSL certificates for your domain to secure user data and communications.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contributions
+
+Contributions to the project are welcome! Feel free to fork the repository, make changes, and submit a pull request.
+
+---
+
+ShadowKnight Hosting is designed to be a fully-featured and self-sustaining platform for all your Minecraft and Eaglercraft server hosting needs. Whether you're running a small server for friends or managing a large community, this platform is built to grow with you.
